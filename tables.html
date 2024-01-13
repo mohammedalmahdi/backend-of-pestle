@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="all.min.css">
+    <!-- Main Bootstrap Javascript File -->
+    <!-- <script defer src="js/bootstrap.min.js"></script> -->
+    
+</head>
+<body>
+    <div class="container">
+        <!-- 1 -->
+        <div class="slidecontainer">
+            <input type="text" name="description" id="description">
+            <input type="range" min="1" max="10" value="1" id="rangeInput" oninput="updateRadioInputs() & updateImpactInputs()">
+            <span id="rangeValue">1</span>
+        </div>
+        <!-- 2 -->
+        <div id="radioInputsContainer" class="prob">
+        </div>
+        <!-- 3 -->
+        <div class="mpt" id="radioImpactContainer">
+        </div>
+        <div>
+            <button onclick="getprobValue()">submit <i class="fa fa-left"></i></button>
+        </div>
+
+        <div class="degree">
+            <input type="number" name="deg" id="deg">
+        </div>
+    </div>
+    
+      <!-- Main Javascript File -->
+    <script defer src="table.js"></script>
+</body>
+</html>
